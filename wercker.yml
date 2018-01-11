@@ -1,6 +1,8 @@
 box: ruby
 services:
-    - wercker/postgresql
+	- id: postgres
+	  env:
+	   POSTGRES_PASSWORD: $DATABASE_PASSWORD
 build:
     steps:
         - bundle-install
