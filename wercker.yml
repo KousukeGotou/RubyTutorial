@@ -1,7 +1,6 @@
 box: ruby
 services:
-    - postgres
-    http://devcenter.wercker.com/docs/services/postgresql.html
+    - wercker/postgresql
 build:
     steps:
         - bundle-install
